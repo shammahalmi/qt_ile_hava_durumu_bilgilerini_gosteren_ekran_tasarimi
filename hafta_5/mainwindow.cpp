@@ -17,8 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
     m_networkManager= new QNetworkAccessManager(this);
     m_networkReply= m_networkManager->get(QNetworkRequest(QUrl("https://qtfirebaseentegre-default-rtdb.firebaseio.com/lisans öğrencisi.json")));
 
-    // hava durumu bilgilerini openweathermap'tan alınca aşağıdaki gibi değiştirilebilir.
-
+   
 
 
 }
@@ -30,6 +29,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
+
+     // hava durumu bilgilerini openweathermap'tan alınca aşağıdaki gibi değiştirilebilir.
+
     ui->sicaklik_9->setText("5/5");
     //yolu kopyaladıktan sonra slash'ların tersini yazmamız gerek
 
